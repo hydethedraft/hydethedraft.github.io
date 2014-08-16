@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1">
+<title>hydethedraft</title>
+<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+<style>
+
+* {
+    margin: 0; padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: table;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 1em;
+    line-height: 1.3em;
+    color: #fff;
+    background-color: #333;
+    background-size: cover;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.promo {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    font-weight: 200;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    vertical-align: middle;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-font-smoothing: antialiased;
+}
+
+.logo {
+    display: inline-block;
+    width: 15em;
+    height: 2.3em;
+    text-indent: -9999px;
+    background: url('images/logo-white.svg') no-repeat;
+    background-size: cover;
+}
+
+.tagline,
+.sub-tagline {
+    margin: 1em;
+}
+
+.tagline {
+    font-size: 2em;
+    line-height: 1.3em;
+}
+
+.sub-tagline {
+    font-size: 1.4em;
+    line-height: 1.3em;
+}
+
+@media screen and (min-width: 600px) {
+
+    body {
+        font-size: 1.7em;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="promo">
+
+    <span class="logo"><b>hyde</b>the<b>draft</b></span>
+
+    <blockquote class="tagline">Getting every story the attention it deserves.</blockquote>
+
+    <blockquote class="sub-tagline">Coming Soon</blockquote>
+
+    <p><a href="http://twitter.com/hydethedraft/"><i class="fa fa-twitter"></i> @hydethedraft</a></p>
+
+</div>
+
+<script>
+
+(function () {
+
+    'use strict';
+
+    var photos = ['bike', 'boat', 'bus', 'dock', 'mountain'],
+        bodyElem = document.querySelector('body'),
+        randomlySelectedPhoto = photos[Math.floor(Math.random() * photos.length)];
+
+    bodyElem.setAttribute('style', 'background-image: url(images/promo/' + randomlySelectedPhoto + '.jpg);');
+
+}());
+
+</script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-48525827-1', 'hydethedraft.com');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>
